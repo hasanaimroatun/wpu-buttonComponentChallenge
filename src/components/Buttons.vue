@@ -1,29 +1,7 @@
 <template>
     <div class="row g-0">
         <div class="col-2 offset-1 text-start">
-            <div class="mb-5"><b><span>Dev</span>challenges.io</b></div>
-            <div class="navBar">
-                <ul class="navbar-nav pe-3">
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Colors</a>
-                    </li>
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Typography</a>
-                    </li>
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Spaces</a>
-                    </li>
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Buttons</a>
-                    </li>
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#"><b>Inputs</b></a>
-                    </li>
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Grid</a>
-                    </li>
-                </ul>
-            </div>
+            <Navigation />
         </div>
         <div class="col-9 text-start">
             <h1 class="mt-3">Buttons</h1>
@@ -52,10 +30,12 @@
     import ButtonIcon from './ButtonIcon.vue'
     import ButtonSize from './ButtonSize.vue'
     import ButtonColor from './ButtonColor.vue'
+    import Navigation from './Navigation.vue'
 
     export default {
         name: 'Button-component',
         components: {
+            Navigation,
             ButtonDefault,
             ButtonOutline,
             ButtonText,
