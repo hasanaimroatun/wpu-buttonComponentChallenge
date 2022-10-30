@@ -16,7 +16,7 @@
 
             <br><br>
             <div class="iconSource mt-5">Icons: <a href="https://fontawesome.com/icons/cart-plus?s=solid&f=classic">https://fontawesome.com/icons/cart-plus?s=solid&f=classic</a></div>
-            <div class="createdBy mt-5 mb-5">created by <a href="#">hasanaimroatun</a> - devChallenges.io</div>
+            <div class="createdBy mt-5 mb-5">created by <a href="https://github.com/hasanaimroatun/wpu-buttonComponentChallenge">hasanaimroatun</a> - devChallenges.io</div>
         </div>
     </div>
 </template>
