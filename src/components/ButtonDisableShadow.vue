@@ -1,12 +1,8 @@
 <template>
     <div class="row mb-5">
-        <div class="col-4">
-            <div v-text="label5"></div>
-            <button type="button" class="btn btn-primary mt-1">Default</button>
-        </div>
-        <div class="col">
-            <div v-text="label2"></div>
-            <button type="button" class="btn btn-primary mt-1">Default</button>
+        <div class="col-md-9 col-sm-8">
+            <div v-text="label5" class="label"></div>
+            <button type="button" class="btn mt-1">Default</button>
         </div>
     </div>
 </template>
@@ -16,7 +12,6 @@
         name: 'Button-disableShadow',
         data() {
             return {
-                label2: '&:hover, &:focus',
                 label5: '<Button disableShadow />'
             }
         }
@@ -24,5 +19,21 @@
 </script>
 
 <style scoped>
+.label {
+    color: #333333;
+}
 
+button,
+button:hover,
+button:focus {
+    background-color: #3D5AFE;
+    color: white;
+    box-shadow: none;
+}
+
+@media screen and (max-width:768px) {
+    button {
+        margin-left: 45px;
+    }
+}
 </style>

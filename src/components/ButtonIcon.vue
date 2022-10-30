@@ -1,17 +1,17 @@
 <template>
     <div class="row mb-5">
-        <div class="col-4">
-            <div v-text="label8"></div>
+        <div class="col-md-4 col-sm-8">
+            <div v-text="label8" class="label"></div>
             <button type="button" class="btn btn-primary mt-1">
                 <font-awesome-icon icon="fa-solid fa-cart-plus" />
                 Default
             </button>
         </div>
-        <div class="col">
-            <div v-text="label9"></div>
+        <div class="col-md-4 col-sm-8">
+            <div v-text="label9" class="label labelRight"></div>
             <button type="button" class="btn btn-primary mt-1">
-                <font-awesome-icon icon="fa-solid fa-cart-plus" />
                 Default
+                <font-awesome-icon icon="fa-solid fa-cart-plus" />
             </button>
         </div>
     </div>
@@ -30,5 +30,17 @@
 </script>
 
 <style scoped>
+button {
+    background-color: #2962FF;
+}
 
+@media screen and (max-width:768px) {
+    .labelRight {
+        margin-top: 45px;
+    }
+
+    button {
+        margin-left: 45px;
+    }
+}
 </style>

@@ -1,15 +1,15 @@
 <template>
     <div class="row mb-5">
-        <div class="col-3">
-            <div v-text="label10"></div>
+        <div class="col-md-3 col-sm-8">
+            <div v-text="label10" class="label"></div>
             <button type="button" class="btn btn-primary btn-sm mt-1">Default</button>
         </div>
-        <div class="col-3">
-            <div v-text="label11"></div>
+        <div class="col-md-3 col-sm-8">
+            <div v-text="label11" class="label labelMd"></div>
             <button type="button" class="btn btn-primary btn-md mt-1">Default</button>
         </div>
-        <div class="col">
-            <div v-text="label12"></div>
+        <div class="col-md-3 col-sm-8">
+            <div v-text="label12" class="label labelLg"></div>
             <button type="button" class="btn btn-primary btn-lg mt-1">Default</button>
         </div>
     </div>
@@ -29,5 +29,18 @@
 </script>
 
 <style scoped>
+button {
+    background-color: #2962FF;
+}
 
+@media screen and (max-width:768px) {
+    .labelMd,
+    .labelLg {
+        margin-top: 45px;
+    }
+
+    button {
+        margin-left: 45px;
+    }
+}
 </style>

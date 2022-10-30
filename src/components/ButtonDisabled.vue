@@ -1,12 +1,12 @@
 <template>
     <div class="row mb-5">
-        <div class="col-4">
-            <div v-text="label6"></div>
-            <button type="button" class="btn btn-secondary mt-1" disabled data-bs-toggle="button">Disabled</button>
+        <div class="col-md-4 col-sm-8">
+            <div v-text="label6" class="label"></div>
+            <button type="button" class="btnDisabled mt-1">Disabled</button>
         </div>
-        <div class="col">
-            <div v-text="label7"></div>
-            <button type="button" class="btn btn-light mt-1" disabled data-bs-toggle="button">Disabled</button>
+        <div class="col-md-4 col-sm-8">
+            <div v-text="label7" class="label lDisabledText"></div>
+            <button type="button" class="btnDisabledText mt-1">Disabled</button>
         </div>
     </div>
 </template>
@@ -24,5 +24,40 @@
 </script>
 
 <style scoped>
+.lDisabledText {
+    color: #333333;
+}
 
+button {
+    padding: 7px 15px;
+    border-radius: 6px;
+}
+
+.btnDisabled,
+.btnDisabled:hover,
+.btnDisabled:focus {
+    background-color: #E0E0E0;
+    border: none;
+    color: #9E9E9E;
+    outline: none;
+}
+
+.btnDisabledText,
+.btnDisabledText:hover,
+.btnDisabledText:focus {
+    background-color: white;
+    color: #9E9E9E;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:768px) {
+    .lDisabledText {
+        margin-top: 45px;
+    }
+
+    button {
+        margin-left: 45px;
+    }
+}
 </style>
