@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/hasanaimroatun/wpu-buttonComponentChallenge">
       Solution
     </a>
     <span> | </span>
@@ -35,9 +35,9 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/hasanaimroatun/wpu-buttonComponentChallenge/blob/master/src/assets/2022-10-30.png)
 
-You can see my demo on https://landing-page2-003.web.app. I have have interest in web development since a few months ago. I have learned css, html, javascript, react, boostrap, vue, and sass from youtube and few website. I hope with more learn and practice from devChallenges can improve my skill in developing website.
+You can see my demo on . I have have interest in web development since a few months ago. I have learned css, html, javascript, react, boostrap, vue, and sass from youtube and few website. I hope with more learn and practice from devChallenges can improve my skill in developing website.
 
 ### Built With
 
