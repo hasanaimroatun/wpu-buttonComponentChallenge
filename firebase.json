@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "button-component-challenge-003",
     "public": "dist",
     "ignore": [
       "firebase.json",
