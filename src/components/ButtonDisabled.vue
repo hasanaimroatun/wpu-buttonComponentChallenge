@@ -2,11 +2,11 @@
     <div class="row mb-5">
         <div class="col-md-4 col-sm-8">
             <div v-text="label6" class="label"></div>
-            <button type="button" class="btnDisabled mt-1">Disabled</button>
+            <button type="button" class="btnDisabled mt-1" @click="$emit('btnStyle5')">Disabled</button>
         </div>
         <div class="col-md-4 col-sm-8">
             <div v-text="label7" class="label lDisabledText"></div>
-            <button type="button" class="btnDisabledText mt-1">Disabled</button>
+            <button type="button" class="btnDisabledText mt-1" @click="$emit('btnStyle6')">Disabled</button>
         </div>
     </div>
 </template>
@@ -19,7 +19,8 @@
                 label6: '<Button disabled />',
                 label7: '<Button variant=”text” disabled />'
             }
-        }
+        },
+        emits: ['btnStyle5', 'btnStyle6']
     }
 </script>
 

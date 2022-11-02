@@ -2,14 +2,14 @@
     <div class="row mb-5">
         <div class="col-md-4 col-sm-8">
             <div v-text="label8" class="label"></div>
-            <button type="button" class="btn btn-primary mt-1">
+            <button type="button" class="btn btn-primary mt-1" @click="$emit('icon1')">
                 <font-awesome-icon icon="fa-solid fa-cart-plus" />
                 Default
             </button>
         </div>
         <div class="col-md-4 col-sm-8">
             <div v-text="label9" class="label labelRight"></div>
-            <button type="button" class="btn btn-primary mt-1">
+            <button type="button" class="btn btn-primary mt-1" @click="$emit('icon2')">
                 Default
                 <font-awesome-icon icon="fa-solid fa-cart-plus" />
             </button>
@@ -25,7 +25,8 @@
                 label8: '<Button startIcon=”local_grocery_store” />',
                 label9: '<Button endIcon=”local_grocery_store” />'
             }
-        }
+        },
+        emits: ['icon1', 'icon2']
     }
 </script>
 

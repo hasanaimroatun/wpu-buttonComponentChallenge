@@ -2,7 +2,7 @@
     <div class="row mb-5">
         <div class="col-md-9 col-sm-8">
             <div v-text="label3" class="label"></div>
-            <button type="button" class="btn mt-1">Default</button>
+            <button type="button" class="btn mt-1" @click="$emit('btnStyle2')">Default</button>
         </div>
     </div>
 </template>
@@ -14,7 +14,8 @@
             return {
                 label3: '<Button variant=”outline” />'
             }
-        }
+        },
+        emits: ['btnStyle2']
     }
 </script>
 

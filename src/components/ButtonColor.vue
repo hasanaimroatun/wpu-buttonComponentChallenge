@@ -3,19 +3,19 @@
         <div class="row mb-5">
             <div class="col-md-3 col-sm-8">
                 <div v-text="label13" class="label"></div>
-                <button type="button" class="btn btnDefault mt-1">Default</button>
+                <button type="button" class="btn btnDefault mt-1" @click="$emit('btnStyle12')">Default</button>
             </div>
             <div class="col-md-3 col-sm-8">
                 <div v-text="label14" class="label lPrimary"></div>
-                <button type="button" class="btn btnPrimary mt-1">Default</button>
+                <button type="button" class="btn btnPrimary mt-1" @click="$emit('btnStyle13')">Default</button>
             </div>
             <div class="col-md-3 col-sm-8">
                 <div v-text="label15" class="label lSecondary"></div>
-                <button type="button" class="btn btnSecondary mt-1">Secondary</button>
+                <button type="button" class="btn btnSecondary mt-1" @click="$emit('btnStyle14')">Secondary</button>
             </div>
             <div class="col-md-3 col-sm-8">
                 <div v-text="label16" class="label lDanger"></div>
-                <button type="button" class="btn btnDanger mt-1">Danger</button>
+                <button type="button" class="btn btnDanger mt-1" @click="$emit('btnStyle15')">Danger</button>
             </div>
         </div>
     </div>
@@ -31,7 +31,8 @@
                 label15: '<Button color=”secondary” />',
                 label16: '<Button color=”danger” />'
             }
-        }
+        },
+        emits: ['btnStyle12','btnStyle13','btnStyle14','btnStyle15']
     }
 </script>
 

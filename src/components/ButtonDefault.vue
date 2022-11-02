@@ -2,7 +2,12 @@
     <div class="row mb-5">
         <div class="col-md-9 col-sm-8">
             <div v-text="label1" class="label"></div>
-            <button type="button" class="btn mt-1">Default</button>
+            <button 
+            type="button" 
+            class="btn mt-1" 
+            @click="$emit('btnStyle1')">
+                Default
+            </button>
         </div>
     </div>
 </template>
@@ -14,14 +19,15 @@
             return {
                 label1: '<Button />'
             }
-        }
+        },
+        emits: ['btnStyle1']
     }
 </script>
 
 <style scoped>
 .label {
     color: #333333;
-    margin-top: 28px;
+    margin-top: 13px;
 }
 
 button {

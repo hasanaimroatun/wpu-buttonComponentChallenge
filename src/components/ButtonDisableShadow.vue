@@ -2,7 +2,7 @@
     <div class="row mb-5">
         <div class="col-md-9 col-sm-8">
             <div v-text="label5" class="label"></div>
-            <button type="button" class="btn mt-1">Default</button>
+            <button type="button" class="btn mt-1" @click="$emit('btnStyle4')">Default</button>
         </div>
     </div>
 </template>
@@ -14,7 +14,8 @@
             return {
                 label5: '<Button disableShadow />'
             }
-        }
+        },
+        emits: ['btnStyle4']
     }
 </script>
 
